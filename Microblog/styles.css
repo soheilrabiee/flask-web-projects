@@ -92,3 +92,21 @@ body {
 .form__submit:hover {
     background-color: #18c1e1;
 }
+
+.entry {
+    margin-top: 50px;
+}
+
+.entry__title {
+    display: inline;
+    font-size: 18px;
+}
+
+.entry__date {
+    color: #5c6b70;
+}
+
+.entry__content {
+    font-size: 16px;
+    line-height: 150%;
+}
