@@ -18,7 +18,16 @@
     </head>
 
     <body>
-        <header class="header"></header>
+        <header class="header">
+            <h1 class="header__logo">
+                <a href="{{ url_for('index') }}" class="header__link"></a>
+                {% if "add" not in request.endpoint %}
+                <a href="{{ url_for('add_habit') }}" class="header__link"
+                    >+ Add new</a
+                >
+                {% endif %}
+            </h1>
+        </header>
 
         <main class="main">{% block main_content %} {% endblock %}</main>
     </body>
